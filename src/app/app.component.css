@@ -1,0 +1,47 @@
+
+
+* {
+    font-size:20px;
+    box-sizing: content-box;
+    
+}
+
+.addSection {
+    min-height: 20vh;
+    background: indigo;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.taskList {
+    min-height: 80vh;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ng-untouched {
+    border: solid 5px orange;
+}
+.ng-pristine {
+    border: solid 5px white;
+}
+.ng-invalid{
+    border: solid 5px red;
+}
+.ng-valid {
+    border: solid 5px green;
+}
+input {
+    margin: 5px;
+    padding: 10px;
+    background: transparent;
+    color:white;
+}

@@ -1,0 +1,17 @@
+<div class="taskItem"
+     [class.completed]="task.completed"
+     [class.isBgLight]="isLight(task.backgroundColor)"
+     id="{{task.id}}"
+     [style.background-color]="task.backgroundColor">
+    <h1>{{task.text}}</h1>
+    <div>
+        <input type="checkbox"
+               name="completed"
+               [(ngModel)]="task.completed"
+               (change)="markAsCompleted(task.id,task.completed)">
+        <input type="button"
+               value="X"
+               (click)="removeTask(task.id)">
+    </div>
+    <small>{{task.date | date:'dd-MM-yyyy, hh:mm:ss'}}</small>
+</div>
